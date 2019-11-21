@@ -436,7 +436,7 @@ contextual information."
   "Transcode SUBSCRIPT from Org to JIRA.
 CONTENTS is the text with subscript markup. INFO is a plist holding
 contextual information."
-  (ox-jira--text-transform-embeddable "~" contents))
+  (org-export-expand subscript contents))
 
 (defun ox-jira-superscript (superscript contents info)
   "Transcode SUPERSCRIPT from Org to JIRA.
